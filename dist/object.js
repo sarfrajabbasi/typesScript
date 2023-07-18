@@ -1,4 +1,5 @@
-var car;
+"use strict";
+let car;
 car = {
     make: "toyota",
     model: "yella",
@@ -11,13 +12,13 @@ console.log(car);
  * @param car - the car to print
  */
 function printCar(car) {
-    var str = "".concat(car.make, " ").concat(car.model, " (").concat(car.year, ")");
+    let str = `${car.make} ${car.model} (${car.year})`;
     if (typeof car.chargeVoltage !== "undefined") {
-        str += "// ".concat(car.chargeVoltage, "v");
+        str += `// ${car.chargeVoltage}v`;
     }
     console.log(str);
 }
-var myCar = {
+let myCar = {
     make: "toyota",
     model: "yella",
     year: 2002,
@@ -27,27 +28,27 @@ var myCar = {
 console.log(myCar.color);
 printCar(myCar);
 // index signatures:---
-var phone = {
+let phone = {
     home: { country: "+1", area: "211", number: "652-4515" },
     work: { country: "+1", area: "670", number: "752-5856" },
     fax: { country: "+1", area: "322", number: "525-4357" },
 };
-var phones = {};
+let phones = {};
 phones.fax;
 //  Arrays and tuples:---
-var fileExtensions = ["js", "ts"];
+const fileExtensions = ["js", "ts"];
 // declare an array of numbers
-var numbers = [1, 2, 3, 4, 1, 6];
+let numbers = [1, 2, 3, 4, 1, 6];
 // declare an array of booleans
-var flags = [true, false, true];
-var people = [
+let flags = [true, false, true];
+let people = [
     { name: "Jhon", age: 25 },
     { name: "Tina", age: 15 },
     { name: "Addy", age: 23 },
 ];
-var numbers1 = [1, 2, 3, 4, 5];
-var fruits = ["apple", "banana", "orange", "grapes"];
-var cars = [
+let numbers1 = [1, 2, 3, 4, 5];
+let fruits = ["apple", "banana", "orange", "grapes"];
+const cars = [
     {
         make: "toyota",
         model: "UNV-234",
@@ -56,7 +57,7 @@ var cars = [
 ];
 // Tuples:---
 // Declaring a Tuple
-var person = ["Sarfraj", 23, true];
+let person = ["Sarfraj", 23, true];
 // Accessing elements of a tuple
 console.log(person[0]);
 console.log(person[1]);

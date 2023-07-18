@@ -1,3 +1,4 @@
+"use strict";
 function sar(a, b) {
     return a + b;
 }
@@ -25,20 +26,24 @@ console.log(sar(3, 4));
 //     console.log(await addNumbers(3,4));
 // })();
 // Variables and Values:---
-var a = 9;
+let a = 9;
 // a = "sadasdas";
-var b = 6;
+const b = 6;
 // Implicit any and type annotations:---
-var randomWaitTime = Math.round(Math.random() * 500) + 500;
-var startTime = new Date();
-var endTime; //any
-setTimeout(function () {
+const randomWaitTime = Math.round(Math.random() * 500) + 500;
+let startTime = new Date();
+let endTime; //any
+setTimeout(() => {
     // endTime = 0;
     endTime = new Date();
 }, randomWaitTime);
-var random_wait_time = Math.round(Math.random() * 500) + 500;
-setTimeout(function () {
+const random_wait_time = Math.round(Math.random() * 500) + 500;
+setTimeout(() => {
     // endTime=0;
     endTime = new Date();
 }, random_wait_time);
-// Function arguments and return values:-----
+// Function Arguments and return values:-----
+function add(a, b) {
+    return a + b;
+}
+add(add(5, 1), 2);

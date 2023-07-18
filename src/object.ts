@@ -1,4 +1,5 @@
-let car: {
+// Foo :
+let car :{
   make: string;
   model: string;
   year: number;
@@ -10,7 +11,7 @@ car = {
 };
 console.log(car);
 
-// create function to print values of this type to the console.
+// Create function to print values of this type to the console.
 
 /**
  * Print information about a car to the console
@@ -66,15 +67,15 @@ phones.fax;
 
 const fileExtensions: string[] = ["js", "ts"];
 
-// declare an array of numbers
+// Declare an array of numbers
 
 let numbers: number[] = [1, 2, 3, 4, 1, 6];
 
-// declare an array of booleans
+// Declare an array of booleans
 
 let flags: boolean[] = [true, false, true];
 
-// declaring an array of custom obejcts
+// Declaring an array of custom obejcts
 
 interface Person {
   name: string;
@@ -112,7 +113,7 @@ console.log(person[0]);
 console.log(person[1]);
 console.log(person[2]);
 
-// limitations:--
+// Limitations:--
 
 person.pop()
 person.pop()
@@ -121,3 +122,5 @@ person.push("str")
 person.push(true)
 
 console.log(person);
+
+
